@@ -1,0 +1,187 @@
+.App {
+  text-align: center;
+  background-color: #e6fff9 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-glass {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  padding: 2.2rem;
+  background: linear-gradient(
+    130deg,
+    rgba(251, 251, 254, 0.6),
+    rgba(251, 251, 254, 0.6)
+  );
+  box-shadow: inset 2px 2px 1px rgba(251, 251, 254, 0.6) inset -2px -2px 1px
+    rgba(251, 251, 254, 0.6);
+  border-radius: 1.2rem;
+  backdrop-filter: blur(10px);
+}
+
+.container-blue {
+  background: linear-gradient(-110deg, #adcae6 60%, #86b1da 60%);
+}
+
+.container-gray {
+  background: linear-gradient(110deg, #e7e7e7 60%, #c1c1c1 60%);
+}
+
+.App {
+  display: grid;
+  grid: auto auto 1fr / 0vw 1fr 0vw;
+  min-height: 100vh;
+}
+
+header {
+  grid-column: 2;
+}
+
+main {
+  display: grid;
+  grid-column: 2;
+}
+
+footer {
+  align-self: end;
+  grid-column: 2;
+}
+
+.card-product:hover {
+  box-shadow: 8px 8px 8px #94bfe0;
+  transform: scale(1.1);
+}
+
+.card-product {
+  transition: 0.3s;
+}
+
+/* CAROUSEL */
+
+.carousel-inner {
+  width: 100%;
+  max-height: 550px !important;
+}
+
+/* HEADER CUSTOM */
+
+.header-custom {
+  background-color: #597287;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.dropdown > .dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+  pointer-events: none;
+}
+
+/* NAVBAR */
+
+.navbar-custom {
+  background-image: linear-gradient(30deg, #106aef 0%, #8eb8f5 100%);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.navbar li a:hover {
+  border-bottom: 2px solid #f0cb16;
+}
+
+.navbar li a.active {
+  border-bottom: 2px solid #442bff;
+}
+/*
+BUTTON HOVER
+*/
+
+.btn:hover {
+  transition: 1s ease-in-out;
+}
+
+.btn {
+  background-color: #71a832;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+/* CARD CUSTOM */
+
+.card-custom {
+  background-image: linear-gradient(30deg, #106aef 0%, #5091fa 100%);
+}
+/* CARD BODY TRANS*/
+.trans-card {
+  background: linear-gradient(110deg, #def5ff 0%, #ebf9ff 100%);
+}
+/* LOADER*/
+
+.loader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url("//upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Phi_fenomeni.gif/50px-Phi_fenomeni.gif")
+    50% 50% no-repeat rgb(249, 249, 249);
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
